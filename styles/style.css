@@ -192,12 +192,41 @@ button {
     border-left: 5px solid rgb(255, 144, 14);
     padding-left: 21px;
 }
+.sister-img{
+    position: relative;
+}
+.img-card {
+    position: absolute;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    width: 342px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -92px;
+    margin-top: -115px;
+    z-index: 100;
+}
+.img-card h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+.img-card p {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+}
 
 /* love-enjoy section ends hear */
 
 /* Mobile screen start hear */
 @media screen and (max-width: 480px) {
-
+    .none,
     .brack,
     .nav-li {
         display: none;
@@ -229,12 +258,13 @@ button {
         align-items: center;
         padding: 5px;
     }
-    .love-enjoy-text{
+
+    .love-enjoy-text {
         padding: 10px;
     }
-    
+
     .love-enjoy-img img,
-    .card{
+    .card {
         width: 100%;
         height: 100%;
     }
