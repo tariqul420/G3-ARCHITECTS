@@ -97,7 +97,8 @@ button {
 
 
 /* our features start hear */
-.our-features {
+.our-features,
+.love-enjoy {
     display: flex;
     gap: 76px;
     align-items: center;
@@ -124,7 +125,8 @@ button {
     justify-content: center;
 }
 
-.text-content h1 {
+.text-content h1,
+.love-enjoy-text h1 {
     font-size: 45px;
     font-weight: 700;
     line-height: 53px;
@@ -140,7 +142,8 @@ button {
     color: rgb(255, 144, 14);
 }
 
-.text-content p {
+.text-content p,
+.love-enjoy-text p {
     color: rgb(114, 114, 114);
     font-size: 16px;
     font-weight: 400;
@@ -150,7 +153,47 @@ button {
     margin-bottom: 32px;
 }
 
+.card {
+    width: 586px;
+    height: 171px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding: 30px 42px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: rgb(19, 19, 19);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: left;
+}
+
+.card p {
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+}
+
 /* our features ends hear */
+
+/* love-enjoy section start hear */
+.love-enjoy {
+    margin-top: 130px;
+    gap: 160px;
+}
+
+.love-enjoy-text h1 {
+    color: rgb(19, 19, 19);
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 21px;
+}
+
+/* love-enjoy section ends hear */
 
 /* Mobile screen start hear */
 @media screen and (max-width: 480px) {
@@ -170,7 +213,8 @@ button {
         font-size: 40px;
     }
 
-    .our-features {
+    .our-features,
+    .love-enjoy {
         flex-direction: column;
     }
 
@@ -184,6 +228,15 @@ button {
         text-align: center;
         align-items: center;
         padding: 5px;
+    }
+    .love-enjoy-text{
+        padding: 10px;
+    }
+    
+    .love-enjoy-img img,
+    .card{
+        width: 100%;
+        height: 100%;
     }
 }
 
