@@ -13,9 +13,11 @@ body {
     max-width: 120rem;
 }
 
+/* header content start hear */
 header {
     height: 82.625rem;
     background: rgba(255, 144, 14, 0.1);
+    margin-bottom: 85px;
 }
 
 nav {
@@ -71,7 +73,7 @@ nav h1 {
     margin-top: 50px;
 }
 
-.header button {
+button {
     border-radius: 8px;
     background: rgb(255, 144, 14);
     color: rgb(255, 255, 255);
@@ -86,20 +88,103 @@ nav h1 {
     margin-top: 32px;
 }
 
-.header-img img{
+.header-img img {
     height: 100%;
     width: 100%;
 }
 
+/* header content ends hear */
+
+
+/* our features start hear */
+.our-features {
+    display: flex;
+    gap: 76px;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.text-content h1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    text-align: left;
+    color: rgb(114, 114, 114);
+}
+
+#color01 {
+    color: rgb(19, 19, 19);
+}
+
+#color02 {
+    color: rgb(255, 144, 14);
+}
+
+.text-content p {
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+/* our features ends hear */
+
+/* Mobile screen start hear */
 @media screen and (max-width: 480px) {
-    .brack, .nav-li{
+
+    .brack,
+    .nav-li {
         display: none;
     }
-    header{
+
+    header {
         height: auto;
         padding-bottom: 15px;
+        padding: 5px;
     }
-    .header h1{
+
+    .header h1 {
         font-size: 40px;
     }
+
+    .our-features {
+        flex-direction: column;
+    }
+
+    .img-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .text-content,
+    .text-content h1,
+    .text-content p {
+        text-align: center;
+        align-items: center;
+        padding: 5px;
+    }
 }
+
+/* Mobile screen ends hear */
