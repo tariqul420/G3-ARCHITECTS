@@ -1,12 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* font-family: "Work Sans", sans-serif; */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Work Sans", sans-serif;
+    margin: 0 auto;
+    max-width: 120rem;
+}
+
+header {
+    height: 82.625rem;
+    background: rgba(255, 144, 14, 0.1);
+}
+
+nav {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 30px;
+}
+
+nav h1 {
+    color: rgb(19, 19, 19);
+    font-size: 2.813rem;
+    font-weight: 700;
+    line-height: 53px;
+    text-align: center;
+}
+
+.nav-li a {
+    color: rgb(66, 66, 66);
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.header {
+    margin-top: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header h1 {
+    color: rgb(19, 19, 19);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 75px;
+    text-align: center;
+}
+
+.header p {
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header button {
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+    width: 180px;
+    height: 64px;
+    border: none;
+    margin-bottom: 50px;
+    margin-top: 32px;
+}
+
+.header-img img{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .brack, .nav-li{
+        display: none;
+    }
+    header{
+        height: auto;
+        padding-bottom: 15px;
+    }
+    .header h1{
+        font-size: 40px;
+    }
 }
