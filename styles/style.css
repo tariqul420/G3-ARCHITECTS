@@ -98,7 +98,8 @@ button {
 
 /* our features start hear */
 .our-features,
-.love-enjoy {
+.love-enjoy,
+.sponspors {
     display: flex;
     gap: 76px;
     align-items: center;
@@ -128,6 +129,7 @@ button {
 .text-content h1,
 .love-enjoy-text h1,
 .facts h1,
+.sponspors-text h1,
 .facts-card h2 {
     font-size: 45px;
     font-weight: 700;
@@ -146,7 +148,8 @@ button {
 
 .text-content p,
 .love-enjoy-text p,
-.facts p {
+.facts p,
+.sponspors-text p {
     color: rgb(114, 114, 114);
     font-size: 16px;
     font-weight: 400;
@@ -286,6 +289,39 @@ button {
 
 /* some facts section ends hear */
 
+/* sponspors section start hear */
+.sponspors {
+    flex-direction: column;
+    margin-bottom: 146px;
+}
+
+.sponspors-text h1 {
+    text-align: center;
+    color: rgb(19, 19, 19);
+}
+
+.sponspors-text p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sponspors-img{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 158px;
+}
+
+.sponspors-img img {
+    filter: grayscale(100%);
+}
+
+.sponspors-img img:hover {
+    filter: grayscale(0%);
+}
+
+/* sponspors section ends hear */
+
 /* Mobile screen start hear */
 @media screen and (max-width: 480px) {
 
@@ -331,25 +367,40 @@ button {
         width: 100%;
         height: 100%;
     }
-    .facts{
+
+    .facts {
         width: auto;
     }
-    .facts-card-content{
+
+    .facts-card-content,
+    .sponspors-img {
         grid-template-columns: repeat(1, 1fr);
     }
-    .fact-text{
+
+    .fact-text {
         width: 100%;
         text-align: center;
         align-items: center;
         /* justify-content: center; */
     }
-    .fact-text p{
+
+    .fact-text p {
         width: 90%;
         text-align: center;
     }
-    .facts-card-content{
+
+    .facts-card-content {
         gap: 124px;
     }
+    .sponspors-img img {
+        display: grid;
+
+    }
+    .sponspors-text{
+        width: 100%;
+        padding: 10px;
+    }
+
 }
 
 /* Mobile screen ends hear */
