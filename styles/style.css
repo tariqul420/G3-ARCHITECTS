@@ -115,7 +115,6 @@ button {
 .text-content {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
 }
 
@@ -238,6 +237,8 @@ button {
 .facts {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 90rem;
     margin: 0 auto;
     margin-top: 207px;
@@ -248,6 +249,7 @@ button {
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+    margin-left: -55rem;
 }
 
 .fact-text h1 {
@@ -259,6 +261,7 @@ button {
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-content: center;
+    gap: 100px;
 }
 
 .facts-card {
@@ -271,8 +274,6 @@ button {
     height: 241.83px;
     border: 1px solid rgb(255, 144, 14);
     border-radius: 8px;
-    margin-left: 50px;
-
 }
 
 .facts-card h2 {
@@ -335,13 +336,15 @@ footer {
     align-items: center;
     justify-content: center;
 }
-footer p{
+
+footer p {
     color: rgb(66, 66, 66);
     font-size: 20px;
     font-weight: 400;
     line-height: 23px;
     text-align: center;
 }
+
 /* footer section ends hear */
 
 /* Mobile screen start hear */
@@ -390,6 +393,10 @@ footer p{
         height: 100%;
     }
 
+    .fact-text {
+        margin-left: 0;
+    }
+
     .facts {
         width: auto;
     }
@@ -397,13 +404,14 @@ footer p{
     .facts-card-content,
     .sponspors-img {
         grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
     }
 
     .fact-text {
         width: 100%;
         text-align: center;
         align-items: center;
-        /* justify-content: center; */
     }
 
     .fact-text p {
@@ -424,7 +432,8 @@ footer p{
         width: 100%;
         padding: 10px;
     }
-    footer{
+
+    footer {
         width: 100%;
         margin-bottom: 20px;
     }
